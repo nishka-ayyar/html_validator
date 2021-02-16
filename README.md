@@ -73,7 +73,7 @@ The `a` tag creates a hyperlink, and the `href` attribute specifies where the li
 Notice that the `href` attribute appears only in the opening tag and not in the closing tag.
 
 The file `tests/test_ec.py` contains test cases for HTML that includes attributes.
-If your code successfully passes all of these test cases, then you will get 1 point of extra credit on this assignment. 
+If your code successfully passes all of these test cases, then you will get 1 point of extra credit on the assignment. 
 You must pass all of the test cases and get the green extra credit badge in order to get this point.
 
 **HINT:**
