@@ -78,4 +78,4 @@ You must pass all of the test cases and get the green extra credit badge in orde
 
 **HINT:**
 You do not need to modify the `validate_html` function at all.
-Instead, just modify the `_extract_tags` function so that it ignores any attributes present in the opening tag.
+Instead, just modify the `_extract_tags` function so that it will ignore any attributes present in the opening tag.
