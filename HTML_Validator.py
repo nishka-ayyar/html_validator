@@ -48,7 +48,7 @@ def _extract_tags(html):
 
     This function returns a list of all the html tags contained
     in the input string,
-    stripping out all text not contained within the angle brackets.
+    stripping out all text not contained within angle brackets.
 
     >>> _extract_tags('Python <strong>rocks</strong>!')
     ['<strong>', '</strong>']
