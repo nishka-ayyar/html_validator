@@ -21,9 +21,9 @@ def validate_html(html):
         else:
             if len(stack) == 0:
                 return False
-            if "/" not in stack[-1] and "/" in tag:
-                if stack[-1][1:-1] == tag[2:-1]:
-                    stack.pop()
+            if "/" not in stack[-1] and "/" in tag and \
+                    stack[-1][1:-1] == tag[2:-1]:
+                stack.pop()
     if len(stack) == 0:
         return True
     else:
