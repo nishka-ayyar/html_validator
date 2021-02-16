@@ -15,6 +15,7 @@ def validate_html(html):
 
     stack = []
     justags = _extract_tags(html)
+    # print(justags)
     for tag in justags:
         if "/" not in tag:
             stack.append(tag)
@@ -56,12 +57,16 @@ def _extract_tags(html):
     i = 0
     tags = []
     while i < len(html):
+        # print(i)
         if html[i] == "<":
             for j in range(i, len(html)):
                 if html[j] == ">":
                     tags.append(html[i:j + 1])
                     i = j + 1
                     break
+                if j == len(html) - 1:
+                    tags.append(html[i:])
+                    return tags
         else:
             i += 1
     return tags
